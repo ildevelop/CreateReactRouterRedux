@@ -44,7 +44,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({
-  testStore: state
+  testStore: state.mainReducer
 });
 function mapDispatchToProps(dispatch) {
   return {...bindActionCreators(mainActions, dispatch)}
